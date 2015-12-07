@@ -39,7 +39,7 @@ local input = [[
 }
 ]]
 
-for _,schema in ipairs{"works","does_not_work"} do
+for _,schema in ipairs{"works","should_work"} do
   local ok, err = validate(input, 'schema.json#/'..schema..'/methods/post')
   if not ok then print(err) else print('OK') end
 end

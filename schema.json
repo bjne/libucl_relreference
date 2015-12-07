@@ -14,7 +14,7 @@
       }
     }
   },
-  "does_not_work": {
+  "should_work": {
     "methods": {
       "post": {
         "type": "object",
