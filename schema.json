@@ -1,6 +1,6 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "id": "http://raw.githubusercontent.com/bjne/libucl_relreference/master/schema.json#",
+  "$schema": "https://json-schema.org/draft-04/schema#",
+  "id": "https://raw.githubusercontent.com/bjne/libucl_relreference/master/schema.json#",
   "works": {
     "methods": {
       "post": {
@@ -34,9 +34,9 @@
       "post": {
         "type": "object",
         "properties": {
-          "localpart":{"$ref": "http://raw.githubusercontent.com/bjne/libucl_relreference/master/definitions.json#/localpart"},
-          "domain":{"$ref": "http://raw.githubusercontent.com/bjne/libucl_relreference/master/definitions.json#/domain"},
-          "password":{"$ref": "http://raw.githubusercontent.com/bjne/libucl_relreference/master/definitions.json#/password"}
+          "localpart":{"$ref": "https://raw.githubusercontent.com/bjne/libucl_relreference/master/definitions.json#/localpart"},
+          "domain":{"$ref": "https://raw.githubusercontent.com/bjne/libucl_relreference/master/definitions.json#/domain"},
+          "password":{"$ref": "https://raw.githubusercontent.com/bjne/libucl_relreference/master/definitions.json#/password"}
         },
         "required": ["localpart","password"],
         "additionalProperties": false
@@ -46,7 +46,7 @@
   "remote_relative": {
     "methods": {
       "post": {
-        "$ref": "http://raw.githubusercontent.com/bjne/libucl_relreference/master/schema.json#/should_work/methods/post"
+        "$ref": "https://raw.githubusercontent.com/bjne/libucl_relreference/master/schema.json#/should_work/methods/post"
       }
     }
   }
