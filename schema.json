@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "works": {
+    "methods": {
+      "post": {
+        "type": "object",
+        "properties": {
+          "localpart":{"$ref": "file://definitions.json#/localpart"},
+          "domain":{"$ref": "file://definitions.json#/domain"},
+          "password":{"$ref": "file://definitions.json#/password"}
+        },
+        "required": ["localpart","password"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "does_not_work": {
+    "methods": {
+      "post": {
+        "type": "object",
+        "properties": {
+          "localpart":{"$ref": "definitions.json#/localpart"},
+          "domain":{"$ref": "definitions.json#/domain"},
+          "password":{"$ref": "definitions.json#/password"}
+        },
+        "required": ["localpart","password"],
+        "additionalProperties": false
+      }
+    }
+  }
+}

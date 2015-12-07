@@ -1,0 +1,18 @@
+{
+  "localpart": {
+    "description": "localpart of a email-address/username"
+    "type": "string",
+    "pattern": "^[a-zA-Z0-9]+([_.-]*[a-zA-Z0-9]*)$"
+  },
+  "domain": {
+    "description": "fully qualified domain-name",
+    "type": "string",
+    "pattern": "^[^ ]+$"
+  },
+  "password": {
+    "description": "password definition",
+    "type": "string",
+    "minLength": 8,
+    "maxLength": 64
+  }
+}
