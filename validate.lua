@@ -41,5 +41,5 @@ local input = [[
 
 for _,schema in ipairs{"works","should_work", "remote", "remote_relative"} do
   local ok, err = validate(input, 'schema.json#/'..schema..'/methods/post')
-  if not ok then print(err) else print('OK') end
+  if not ok then print(schema.."\t"..err) else print(schema..'\tOK') end
 end
