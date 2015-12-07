@@ -31,6 +31,20 @@
   "remote": {
     "methods": {
       "post": {
+        "type": "object",
+        "properties": {
+          "localpart":{"$ref": "https://raw.githubusercontent.com/bjne/libucl_relreference/master/definitions.json#/localpart"},
+          "domain":{"$ref": "https://raw.githubusercontent.com/bjne/libucl_relreference/master/definitions.json#/domain"},
+          "password":{"$ref": "https://raw.githubusercontent.com/bjne/libucl_relreference/master/definitions.json#/password"}
+        },
+        "required": ["localpart","password"],
+        "additionalProperties": false
+      }
+    }
+  },
+  "remote_relative": {
+    "methods": {
+      "post": {
         "$ref": "https://raw.githubusercontent.com/bjne/libucl_relreference/master/schema.json#/should_work/methods/post"
       }
     }
