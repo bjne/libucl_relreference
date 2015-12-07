@@ -27,5 +27,12 @@
         "additionalProperties": false
       }
     }
+  },
+  "remote": {
+    "methods": {
+      "post": {
+        "$ref": "https://raw.githubusercontent.com/bjne/libucl_relreference/master/schema.json#/should_work/methods/post"
+      }
+    }
   }
 }
